@@ -1,12 +1,23 @@
 .fondo {
     background-image: url(./images/Fondosite.jpg);
-    height: 100vh;
+    height: 100%;
+}
+
+.fondo2 {
+    background-color: f0f6f6;
 }
 
 .margender {
     margin-right: 2rem;
     margin-top: 1rem;
 }
+
+.recta {
+    border: dotted #c4f1f1 6px;
+    border-bottom: none;
+    width: 4%;
+    margin: 100px auto;
+  }
 
 @media (max-width: 767px) {
     .margender {
@@ -15,12 +26,53 @@
         padding-top: 1rem;
     }
     .margentop {
-        margin-top: 6rem !important;
+        margin-top: 0rem !important;
+    }
+    .cuadrado {
+        margin-top: auto !important;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-bottom: 5rem;
+    }
+    .paddingbot {
+        padding-bottom: 1rem !important;
     }
 }
 
+@media (min-width: 768px) and (max-width: 840px) {
+    .margentop {
+        margin-top: 5rem !important;
+    }
+    .cuadrado {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .paddingbot {
+        padding-bottom: 3rem;
+    }
+}
+
+@media (min-width: 841px) {
+    .cuadrado {
+        width: max-content;
+    }
+}
+
+.alineador {
+    display: flex;
+    justify-content: center;
+}
+
+.nave {
+    background-color: #E46F1B;
+}
+
+.paddingbot {
+    padding-bottom: 9rem;
+}
+
 .margentop {
-    margin-top: 10rem;
+    margin-top: 6rem;
 }
 
 .helloworld {
@@ -31,6 +83,14 @@
 
 .DaniShato {
     font-size: 10vh;
+    letter-spacing: 0.05rem;
+}
+
+.programmer {
+    color: #003459;
+    transform: scaleY(0.93);
+    letter-spacing: 0.2rem;
+    margin-top: 1.2rem;
 }
 
 .naranja {
@@ -42,9 +102,64 @@
 }
 
 .cuadrado {
-    border: blueviolet solid;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+    border: solid;
+    border-image: linear-gradient(90deg, #5DE0E6, #004AAD) 1;
     padding: 2rem;
-  }
+    border-width: 5px;
+}
+
+.flexi {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fotomia {
+    border-radius: 50%;
+    height: 12rem;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+
+.columna {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.minombre {
+    margin-left: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.fechan {
+    margin-left: 20px;
+    margin-bottom: 50px;
+    font-weight: 200;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+form {
+    margin: 20px auto;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+label, input, textarea {
+    display: block;
+    margin-bottom: 10px;
+}
+  
+input, textarea {
+    width: 100%;
+    padding: 5px;
+}
+  
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
