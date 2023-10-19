@@ -1,0 +1,50 @@
+.fondo {
+    background-image: url(./images/Fondosite.jpg);
+    height: 100vh;
+}
+
+.margender {
+    margin-right: 2rem;
+    margin-top: 1rem;
+}
+
+@media (max-width: 767px) {
+    .margender {
+        margin-top: 0 !important;
+        margin-right: 0;
+        padding-top: 1rem;
+    }
+    .margentop {
+        margin-top: 6rem !important;
+    }
+}
+
+.margentop {
+    margin-top: 10rem;
+}
+
+.helloworld {
+    font-size: 5vh;
+    letter-spacing: 0.078em;
+    line-height: 2em;
+}
+
+.DaniShato {
+    font-size: 10vh;
+}
+
+.naranja {
+    color: #E46F1B;
+}
+
+.mont {
+    font-family: 'Montserrat', sans-serif;;
+}
+
+.cuadrado {
+    border: blueviolet solid;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+  }
